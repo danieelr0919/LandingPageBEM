@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>FitTrack - Sitio Web de Fitness y Nutrición</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="assets/img/fittrack.png" alt="FitTrack Logo">
+        </div>
+        <nav class ="header__nav">
+            <ul class="header__menu">
+                <li class="header__item">
+                    <a href="#inicio" class="header__link">Inicio</a>
+                </li>
+                <li class="header__item">
+                    <a href="#caracteristicas" class="header__link">Características</a>
+                </li>
+                <li class="header__item">
+                    <a href="#testimonios" class="header__link">Testimonios</a>
+                </li>
+                <li class="header__item">
+                    <a href="#contacto" class="header__link">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#planes" class="header__btn">Comenzar Gratis</a>
+    </header>
+    <main>
+        <section class="hero" id="inicio">
+                <div class="hero__img">
+                    <img src="assets/img/fitness.jpg" alt="Persona Entrenando con FitTrack" title="Persona Entrenando con FitTrack">
+                </div>
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <h1 class="hero__title">¡Bienvenido a FitTrack!</h1>
+                        <p class="hero__description">Tu compañero ideal para alcanzar tus objetivos de fitness y nutrición.</p>     
+                        <button class="hero__btn">Transforma tu cuerpo ahora</button> 
+                    </div>
+                </div>
+        </section>
+        <section class="features" id="caracteristicas">
+                <div class="features__container">
+                    <h2 class="features__title">Características Principales</h2>
+
+                    <div class="features__grid">
+                        <!--Tarjeta 1-->
+                        <div class="features__card features__card--primary">
+                            <div class="features__icon">📊</div>
+                            <h3 class="features_card--title">Seguimiento Inteligente</h3>
+                            <p class="features_card--description">Monitoriza tus progresos y ajusta tus objetivos en tiempo real.</p>
+                        </div>
+                        <!--Tarjeta 2-->
+                        <div class="features__card features__card--secondary">
+                            <div class="features__icon">💪</div>
+                            <h3 class="features_card--title">Entrenamiento Personalizado</h3>
+                            <p class="features_card--description">Rutinas adaptadas a tu nivel y objetivos.</p>
+                        </div>
+
+                        <!--Tarjeta 3-->
+                        <div class="features__card features__card--tertiary">
+                            <div class="features__icon">🥗</div>
+                            <h3 class="features_card--title">Nutricion Exacta</h3>
+                            <p class="features_card--description">Plan de comidas personalizado con calculo de macros y seguimiento de calorias en tiempo real.</p>
+                        </div>
+                    </div>
+                </div>
+        </section>
+                <!-- Ancla para enlace 'Resultados' -->
+                <span id="beneficios" aria-hidden="true"></span>
+                <section class="testimonials" id="testimonios">
+                    <div class="testimonials__container">
+                        <h2 class="testimonials__title">Lo que dicen nuestros usuarios</h2>
+
+                        <div class="testimonials__grid">
+                            <!--Testimonio 1-->
+                            <div class="testimonials__card testimonials__card--primary">
+                                <img src="https://i.pravatar.cc/100?img=5" alt="Ana Rodriguez" class="testimonials__img">
+                                <h3 class="testimonials__name">Ana Rodriguez</h3>
+                                <p class="testimonials__description">"En 4 meses logre bajar 12kg, gracias a FitTrack. La adaptación de las rutinas y los planes nutricionales me ayudaron a lograr resultados reales.".</p>
+                                <p class="testimonials__rating">⭐⭐⭐⭐⭐</p>
+                            </div>
+                            <!--Testimonio 2-->
+                            <div class="testimonials__card testimonials__card--secondary">
+                                <img src="assets/img/man_photo.jpg" alt="Juan Perez" class="testimonials__img">
+                                <h3 class="testimonials__name">Juan Perez</h3>
+                                <p class="testimonials__description">"Por fin entendi que el ejercicio no es todo, gracias a FitTrack logre entender que la nutrición es igual o más importante."</p>
+                                <p class="testimonials__rating">⭐⭐⭐⭐⭐</p>
+                            </div>
+                                <div class="testimonials__card testimonials__card--tertiary">
+                                    <img src="assets/img/girl_photo.jpg" alt="Maria Gonzales" class="testimonials__img">
+                                    <h3 class="testimonials__name">Maria Gonzales</h3>
+                                    <p class="testimonials__description">"La comunidad de FitTrack es increíble, me ayudaron a mantenerme motivado y a logre mi objetivo de correr 5km sin parar despues de años."</p>
+                                    <p class="testimonials__rating">⭐⭐⭐⭐⭐</p>  
+                                </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="pricing" id="planes">
+                    <div class="pricing__container">
+                        <h2 class="pricing__title">Elige tu Plan Perfecto</h2>
+                        <div class="pricing__grid">
+                            <!--Plan 1-->
+                            <div class="pricing__card pricing__card--primary">
+                                <h3 class="pricing__plan-name">Plan Fit</h3>
+                                <p class="pricing__plan-price">$69.900<span class="pricing__plan-periodo">/mes</span></p>
+                                
+                                <ul class="plan__features__description">
+                                    <li class="plan__feature">Rutinas personalizadas para principiantes</li>
+                                    <li class="plan__feature">Seguimiento basico de progreso fisico</li>
+                                    <li class="plan__feature">Consejos de alimentacion saludable</li>
+                                </ul>
+                                <button class="pricing__btn">Comenzar</button>
+                            </div>
+                            <!--Plan 2 DESTACADO-->
+                            <div class="pricing__card pricing__card--secondary">
+                                <div class="pricing__card__recomendation">Recomendado</div>
+                                <h3 class="pricing__plan-name">Plan Smart</h3>
+                                <p class="pricing__plan-price">$99.900<span class="pricing__plan-periodo">/mes</span></p>
+                                
+                                <ul class="plan__features__description">
+                                    <li class="plan__feature">Rutinas avanzadas adaptadas a tus objetivos</li>
+                                    <li class="plan__feature">Plan de nutricion personalizado</li>
+                                    <li class="plan__feature">Monitoreo semanal y soporte de entrenadores</li>
+                                </ul>
+                                <button class="pricing__btn pricing__btn--primary">Prueba Gratis</button>
+                            </div>
+                            <!--Plan 3-->
+                            <div class="pricing__card pricing__card--tertiary">
+                                <h3 class="pricing__plan-name">Plan Black</h3>
+                                <p class="pricing__plan-price">$149.900<span class="pricing__plan-periodo">/mes</span></p>
+                                
+                                <ul class="plan__features__description">
+                                    <li class="plan__feature">Asesoria integral 24/7 con expertos</li>
+                                    <li class="plan__feature">Seguimiento avanzado de composicion corporal</li>
+                                    <li class="plan__feature">Acceso a entrenamientos y planes exclusivos</li>
+                                </ul>
+                                <button class="pricing__btn">Comenzar</button>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="contact" id="contacto">
+                            <div class="contact__container">
+                                <h2 class="contact__title">¿Listo para Transformar tu Cuerpo?</h2>
+                                <p class="contact__subtitle">Comienza tu viaje fitness hoy mismo</p>
+                                
+                                <form class="contact__form">
+                                    <div class="contact__field">
+                                        <label for ="name">Nombre:</label>
+                                        <input type="text" id="name" placeholder="Escribe tu nombre" class="contact__input" required>
+                                        <span class="contact__error contact__error--hidden">Este campo es requerido</span>
+                                    </div>
+                                    <div class="contact__field">
+                                        <label for="lastname">Apellido:</label>
+                                        <input type="text" id="lastname" placeholder="Escribe tu apellido" class="contact__input" required>
+                                        <span class="contact__error contact__error--hidden">Este campo es requerido</span>
+                                    </div>
+                                    <div class="contact__field">
+                                        <label for="email">Correo Electronico:</label>
+                                        <input type="email" id="email" placeholder="Escribe tu correo electronico" class="contact__input" required>
+                                        <span class="contact__error contact__error--hidden">Ingresa un email válido</span>
+                                    </div>
+                                    <div class="contact__field">
+                                        <label for="message">Mensaje:</label>
+                                        <textarea id="message" placeholder="Escribe tu mensaje" class="contact__textarea" required></textarea>
+                                        <span class="contact__error contact__error--hidden">Este campo es requerido</span>
+                                    </div>
+                                    <button type="submit" class="contact__button">Enviar Mensaje</button>
+                                </form>
+                            </div>
+                </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container">
+            <h2 class="footer__title">FitTrack</h2>
+            <p class="footer__description">Tu compañero en el viaje hacia la salud y el fitness.</p>
+            <div class="footer__social">
+                <a href="#" class="footer__social-icon"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="footer__social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="footer__social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="footer__copyright">© 2025 FitTrack. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
